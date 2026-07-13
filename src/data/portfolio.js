@@ -86,7 +86,7 @@ export const voluntaryExperience = [
     role: 'Drink station volunteer',
     org: 'Nike Melbourne Marathon Festival',
     location: 'Melbourne, VIC',
-    dates: '2025',
+    dates: 'Oct 2025',
     bullets: [
       'Helped set up the drink station and handed drinks to runners on course.',
       'Coordinated with other volunteers to keep handoffs smooth and distribution efficient during peak runner traffic.',
