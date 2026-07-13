@@ -28,7 +28,12 @@ export default function Hero() {
       <div className="mt-12 grid gap-12 md:mt-16 md:grid-cols-2 md:gap-20">
         <div className="space-y-6">
           <p className="max-w-md text-base leading-relaxed text-neutral-950 md:text-lg">
-            {identity.tagline}
+            {identity.tagline.map((line, index) => (
+              <span key={line}>
+                {index > 0 ? <br /> : null}
+                {line}
+              </span>
+            ))}
           </p>
           <p className="text-xs uppercase tracking-editorial text-neutral-600">
             {identity.skills.join(' · ')}

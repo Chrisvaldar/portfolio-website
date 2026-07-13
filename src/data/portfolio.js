@@ -1,9 +1,9 @@
-// NEED: LinkedIn URL
-
 export const identity = {
   name: 'Christopher Valensio Darsono',
-  tagline:
-    'Computer science student at Monash. I build full-stack web apps.',
+  tagline: [
+    'Computer science student at Monash.',
+    'I build full-stack web apps.',
+  ],
   skills: [
     'Python',
     'JavaScript',
@@ -20,8 +20,7 @@ export const identity = {
   ],
   email: 'christophervalensio1@gmail.com',
   github: 'https://github.com/Chrisvaldar',
-  // NEED: LinkedIn URL
-  linkedin: null,
+  linkedin: 'https://www.linkedin.com/in/christopher-darsono-bb8959355/',
 }
 
 export const workExperience = [
