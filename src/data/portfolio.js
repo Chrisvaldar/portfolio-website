@@ -133,17 +133,6 @@ export const projects = [
     image: '/images/fit2179.png',
   },
   {
-    id: 'personal-projects',
-    name: 'personal-projects',
-    featured: false,
-    techStack: ['XGBoost', 'Jupyter Notebook', 'Arduino', 'IoT'],
-    summary:
-      'Umbrella repo for smaller work. NYC Airbnb price prediction with XGBoost on 48,000+ listings, validated on an out-of-distribution set. Homeboy Smart Apartment IoT build where I was project lead and wrote all the code. Local restaurant website redesign with customer research and UI.',
-    github: 'https://github.com/Chrisvaldar/personal-projects',
-    liveUrl: null,
-    image: null,
-  },
-  {
     id: 'homeboy-2',
     name: 'HomeBoy 2.0',
     featured: false,
@@ -152,18 +141,7 @@ export const projects = [
       'Smart home control on Arduino. Password lockout, servo door locks, intruder alarm, motorised window, room lighting, and temperature display. Wrote the full firmware solo for a team assignment.',
     github: 'https://github.com/Chrisvaldar/HomeBoy-2.0',
     liveUrl: null,
-    image: null,
-  },
-  {
-    id: 'frugl-2',
-    name: 'frugl-2.0',
-    featured: false,
-    techStack: ['JavaScript', 'Vite'],
-    summary:
-      'Intent-to-plan grocery shopping pitch demo. Type what you need, answer a short wizard, get a collapsible plan with swap modal. Hardcoded data, no backend.',
-    github: 'https://github.com/Chrisvaldar/frugl-2.0',
-    liveUrl: null,
-    image: null,
+    image: '/images/homeboy-2.png',
   },
   {
     id: 'homeboy',
@@ -174,7 +152,7 @@ export const projects = [
       'Temperature monitoring on Arduino. Live LCD readings, colour-coded RGB LED, buzzer alerts outside safe range, and a serial menu for unit selection and running averages. Wrote the firmware solo.',
     github: 'https://github.com/Chrisvaldar/HomeBoy',
     liveUrl: null,
-    image: null,
+    image: '/images/homeboy.png',
   },
 ]
 
