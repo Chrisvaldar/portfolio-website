@@ -1,7 +1,7 @@
 export const identity = {
   name: 'Christopher Valensio Darsono',
   tagline: [
-    'Computer science student at Monash.',
+    'Computer Science student at Monash.',
     'I build full-stack web apps.',
   ],
   skills: [
