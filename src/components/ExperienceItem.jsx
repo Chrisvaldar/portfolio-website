@@ -1,12 +1,10 @@
 export default function ExperienceItem({ role, org, location, dates, bullets, github }) {
   return (
     <article className="py-10 first:pt-0 md:py-12">
-      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-        <div>
-          <h3 className="text-base font-semibold text-neutral-950">{role}</h3>
-          <p className="text-sm text-neutral-700">{org}</p>
-        </div>
-        <p className="text-sm text-neutral-600 sm:text-right">
+      <div className="space-y-1">
+        <h3 className="text-base font-semibold text-neutral-950">{role}</h3>
+        <p className="text-sm text-neutral-700">{org}</p>
+        <p className="text-sm text-neutral-600">
           {dates}
           {location ? ` · ${location}` : ''}
         </p>

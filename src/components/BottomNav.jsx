@@ -1,7 +1,7 @@
 const tabs = [
   { id: 'home', label: 'home' },
   { id: 'work', label: 'work' },
-  { id: 'community', label: 'community' },
+  { id: 'volunteering', label: 'volunteering' },
   { id: 'projects', label: 'projects' },
   { id: 'hackathons', label: 'hackathons' },
 ]

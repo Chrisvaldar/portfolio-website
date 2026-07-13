@@ -16,7 +16,11 @@ export default function Hero() {
   const restOfName = nameParts.slice(1).join(' ')
 
   return (
-    <section className="flex min-h-[calc(100dvh-5rem)] flex-col justify-center py-16 md:py-24">
+    <section className="relative flex min-h-[calc(100dvh-5rem)] flex-col justify-center py-16 md:py-24">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-[35%] hidden w-px bg-neutral-300 md:block"
+      />
       <h1 className="text-5xl font-bold tracking-tight text-neutral-950 md:text-7xl">
         {firstName}
         <br />

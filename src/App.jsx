@@ -25,8 +25,8 @@ function App() {
         {activeTab === 'work' ? (
           <ExperienceList label="work" items={workExperience} />
         ) : null}
-        {activeTab === 'community' ? (
-          <ExperienceList label="community" items={voluntaryExperience} />
+        {activeTab === 'volunteering' ? (
+          <ExperienceList label="volunteering" items={voluntaryExperience} />
         ) : null}
         {activeTab === 'projects' ? (
           <ProjectList label="projects" items={projects} />
