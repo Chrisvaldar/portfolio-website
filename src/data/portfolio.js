@@ -71,7 +71,7 @@ export const voluntaryExperience = [
   {
     id: 'bootcamp-tutor',
     role: 'Programming Bootcamp Tutor',
-    org: 'Monash College',
+    org: 'Monash University, Faculty of Information Technology',
     location: 'Melbourne, VIC',
     dates: 'O-Week Jul 2026',
     bullets: [
