@@ -69,6 +69,19 @@ export const voluntaryExperience = [
     image: '/images/deepneuron.png',
   },
   {
+    id: 'bootcamp-tutor',
+    role: 'Programming Bootcamp Tutor',
+    org: 'Monash College',
+    location: 'Melbourne, VIC',
+    dates: 'O-Week Jul 2026',
+    bullets: [
+      'Volunteer tutor for the O-Week programming bootcamp, helping incoming students with beginner Python.',
+      'Walk students through simple coding problems and how to think step by step through basic Python logic.',
+      'Mentor one-on-one and in small groups so new students feel supported getting started with programming.',
+    ],
+    image: '/images/bootcamp-tutor.png',
+  },
+  {
     id: 'nike-marathon',
     role: 'Drink station volunteer',
     org: 'Nike Melbourne Marathon Festival',
@@ -76,6 +89,7 @@ export const voluntaryExperience = [
     dates: '2025',
     bullets: [
       'Helped set up the drink station and handed drinks to runners on course.',
+      'Coordinated with other volunteers to keep handoffs smooth and distribution efficient during peak runner traffic.',
     ],
     image: '/images/nike-marathon.png',
   },
