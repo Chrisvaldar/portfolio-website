@@ -66,10 +66,22 @@ export const voluntaryExperience = [
       'Ran interactive workshops on AI and data science for 100+ high school students.',
       'Built slides, exercises, and demos to explain technical topics to non-technical audiences.',
     ],
+    image: '/images/deepneuron.png',
+  },
+  {
+    id: 'nike-marathon',
+    role: 'Drink station volunteer',
+    org: 'Nike Melbourne Marathon Festival',
+    location: 'Melbourne, VIC',
+    dates: '2025',
+    bullets: [
+      'Helped set up the drink station and handed drinks to runners on course.',
+    ],
+    image: '/images/nike-marathon.png',
   },
   {
     id: 'peer-mentorship',
-    role: 'Peer Mentorship Program',
+    role: 'Peer Mentor',
     org: 'Monash College',
     location: 'Melbourne, VIC',
     dates: 'Feb 2025 to Feb 2026',
@@ -77,10 +89,11 @@ export const voluntaryExperience = [
       'Tutored students one-on-one in IT and maths units.',
       'Planned and delivered 8 workshops across 8+ units to help students prep for assessments.',
     ],
+    image: '/images/peer-mentor.png',
   },
   {
     id: 'student-leadership',
-    role: 'Student Leadership Program',
+    role: 'Student Leader',
     org: 'Monash College',
     location: 'Melbourne, VIC',
     dates: 'Nov 2024 to Feb 2026',
@@ -89,6 +102,7 @@ export const voluntaryExperience = [
       'English Student Ambassador. Led orientation sessions and guided incoming students.',
       'Ran icebreakers during orientation to get new students involved.',
     ],
+    image: '/images/student-leadership.png',
   },
 ]
 
