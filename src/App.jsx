@@ -20,7 +20,7 @@ function App() {
 
   return (
     <EditorialLayout>
-      <main className="pb-20">
+      <main className={activeTab === 'home' ? '' : 'pb-20'}>
         {activeTab === 'home' ? <Hero /> : null}
         {activeTab === 'work' ? (
           <ExperienceList label="work" items={workExperience} />
