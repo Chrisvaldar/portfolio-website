@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import EditorialLayout from './components/EditorialLayout'
 import BottomNav from './components/BottomNav'
 import Hero from './components/Hero'
@@ -21,19 +22,25 @@ function App() {
   return (
     <EditorialLayout>
       <main className="pb-20">
-        {activeTab === 'home' ? <Hero /> : null}
-        {activeTab === 'work' ? (
-          <ExperienceList label="work" items={workExperience} />
-        ) : null}
-        {activeTab === 'volunteering' ? (
-          <ExperienceList label="volunteering" items={voluntaryExperience} />
-        ) : null}
-        {activeTab === 'projects' ? (
-          <ProjectList label="projects" items={projects} />
-        ) : null}
-        {activeTab === 'hackathons' ? (
-          <ProjectList label="hackathons" items={hackathons} />
-        ) : null}
+        <AnimatePresence mode="wait">
+          {activeTab === 'home' ? <Hero key="home" /> : null}
+          {activeTab === 'work' ? (
+            <ExperienceList key="work" label="work" items={workExperience} />
+          ) : null}
+          {activeTab === 'volunteering' ? (
+            <ExperienceList
+              key="volunteering"
+              label="volunteering"
+              items={voluntaryExperience}
+            />
+          ) : null}
+          {activeTab === 'projects' ? (
+            <ProjectList key="projects" label="projects" items={projects} />
+          ) : null}
+          {activeTab === 'hackathons' ? (
+            <ProjectList key="hackathons" label="hackathons" items={hackathons} />
+          ) : null}
+        </AnimatePresence>
       </main>
       <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
     </EditorialLayout>
