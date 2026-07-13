@@ -16,7 +16,7 @@ export default function Hero() {
   const restOfName = nameParts.slice(1).join(' ')
 
   return (
-    <section className="min-h-screen py-16 md:py-24">
+    <section className="flex min-h-[calc(100dvh-5rem)] flex-col justify-center py-16 md:py-24">
       <h1 className="text-5xl font-bold tracking-tight text-neutral-950 md:text-7xl">
         {firstName}
         <br />
