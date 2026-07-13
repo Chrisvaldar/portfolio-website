@@ -167,7 +167,7 @@ export const hackathons = [
       'Gamified skill-learning app built in 48 hours. I did the React frontend: game logic, gacha rewards with CSS animations, local state persistence. Flask backend with Elasticsearch and OpenAI for dynamic content. Honourable Mention for Best Design and Most Fun Idea out of 1000+ participants.',
     github: 'https://github.com/Yyjcreeper23/unihack-submission-2026',
     liveUrl: 'https://habitmon.life/',
-    image: null,
+    image: '/images/habitmon.png',
   },
   {
     id: 'formguard',
@@ -186,7 +186,7 @@ export const hackathons = [
       'Real-time gym form tracking. MediaPipe pose estimation scores every rep as fatigue builds, then shows where form broke down and the injury risk. AI coach gives recommendations from session data. Top 5 out of 150+ at MACATHON 2026.',
     github: 'https://github.com/lbrh/FormGaurd',
     liveUrl: 'https://form-guard.vercel.app',
-    image: null,
+    image: '/images/formguard.png',
   },
   {
     id: 'uniqme',
@@ -198,7 +198,8 @@ export const hackathons = [
       'Personalised Uniqlo outfit curation via a style quiz and outfit carousel. Single HTML file demo built in a 2-hour sprint. Winner of Best AI Challenge Idea and Overall Best Idea at Uniqlo ImpactHack.',
     github: 'https://github.com/Chrisvaldar/uniqme-impacthack-uniqlo',
     liveUrl: null,
-    image: null,
+    image: '/images/uniqme.png',
+    secondaryImage: '/images/uniqme-demo.png',
   },
   {
     id: 'forge',
@@ -210,7 +211,8 @@ export const hackathons = [
       'Career path explorer for students whose paths branch and cross. Short reflective quiz surfaces three interactive SVG degree trees with student testimonials. Single-file hackathon prototype.',
     github: 'https://github.com/Chrisvaldar/forge-canva-impacthack',
     liveUrl: 'https://chrisvaldar.github.io/forge-canva-impacthack/',
-    image: null,
+    image: '/images/forge.png',
+    secondaryImage: '/images/forge-demo.png',
   },
   {
     id: 'wyde',
@@ -219,10 +221,10 @@ export const hackathons = [
     featured: false,
     techStack: ['ESP32', 'PlatformIO', 'C++', 'Wi-Fi'],
     summary:
-      'Low-cost robotics rover for learning autonomous systems. ESP32 tank-drive firmware with Wi-Fi teleop from a browser D-pad. Built as a hardware hack with room to grow into sensing and autonomy.',
+      'Low-cost robotics rover for learning autonomous systems. ESP32 tank-drive firmware with Wi-Fi teleop from a browser D-pad. Programmed and wired in a 4-hour sprint. Built as a hardware hack with room to grow into sensing and autonomy.',
     github: 'https://github.com/Chrisvaldar/wyde-the-rover',
     liveUrl: null,
-    image: null,
+    image: '/images/wyde.png',
   },
   {
     id: 'agpc',
@@ -234,7 +236,7 @@ export const hackathons = [
       'Partnership pitch concept: Yo-Chi as official dessert partner of the Australian Grand Prix Corporation across F1 and MotoGP. 12-month activation cycle from countdown promos to post-race flavours. Presentation slides only, no prototype.',
     github: 'https://github.com/Chrisvaldar/AGPC-impacthack',
     liveUrl: null,
-    image: null,
+    image: '/images/agpc.png',
   },
 ]
 

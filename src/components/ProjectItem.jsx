@@ -1,25 +1,65 @@
 import EditorialLink from './EditorialLink'
 
-function ImagePlaceholder({ featured, image, name }) {
-  if (image) {
+function BorderedImage({ src, alt, className = '' }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={`border border-neutral-300 object-contain ${className}`}
+    />
+  )
+}
+
+function ProjectImages({ featured, image, secondaryImage, name }) {
+  if (image && secondaryImage) {
     if (featured) {
       return (
-        <div className="flex w-full items-center justify-center md:min-h-[280px]">
-          <img
+        <div className="flex w-full flex-col gap-3 md:gap-4">
+          <BorderedImage
             src={image}
             alt={name}
-            className="max-h-[320px] w-full border border-neutral-300 object-contain md:max-h-[420px]"
+            className="max-h-[180px] w-full md:max-h-[220px]"
+          />
+          <BorderedImage
+            src={secondaryImage}
+            alt={`${name} demo`}
+            className="max-h-[280px] w-full md:max-h-[360px]"
           />
         </div>
       )
     }
 
     return (
-      <div className="flex h-32 w-32 shrink-0 items-center justify-center md:h-44 md:w-44">
-        <img
+      <div className="flex w-36 shrink-0 flex-col gap-2 md:w-48 md:gap-3">
+        <BorderedImage src={image} alt={name} className="w-full" />
+        <BorderedImage
+          src={secondaryImage}
+          alt={`${name} demo`}
+          className="w-full"
+        />
+      </div>
+    )
+  }
+
+  if (image) {
+    if (featured) {
+      return (
+        <div className="flex w-full items-center justify-center md:min-h-[280px]">
+          <BorderedImage
+            src={image}
+            alt={name}
+            className="max-h-[320px] w-full md:max-h-[420px]"
+          />
+        </div>
+      )
+    }
+
+    return (
+      <div className="flex w-32 shrink-0 md:w-44">
+        <BorderedImage
           src={image}
           alt={name}
-          className="max-h-full max-w-full border border-neutral-300 object-contain"
+          className="max-h-44 w-full md:max-h-52"
         />
       </div>
     )
@@ -58,6 +98,7 @@ export default function ProjectItem({
   github,
   liveUrl,
   image,
+  secondaryImage,
   featured,
   index,
 }) {
@@ -67,7 +108,12 @@ export default function ProjectItem({
     return (
       <article>
         <div className="grid gap-8 md:grid-cols-2 md:items-center md:gap-12">
-          <ImagePlaceholder featured image={image} name={name} />
+          <ProjectImages
+            featured
+            image={image}
+            secondaryImage={secondaryImage}
+            name={name}
+          />
           <div className="flex flex-col justify-center">
             <p className="text-5xl font-bold tracking-tight text-neutral-200 md:text-6xl">
               {indexLabel}
@@ -93,8 +139,17 @@ export default function ProjectItem({
 
   return (
     <article>
-      <div className="flex items-center gap-8 md:gap-10">
-        <ImagePlaceholder featured={false} image={image} name={name} />
+      <div
+        className={`flex gap-8 md:gap-10 ${
+          secondaryImage ? 'items-start' : 'items-center'
+        }`}
+      >
+        <ProjectImages
+          featured={false}
+          image={image}
+          secondaryImage={secondaryImage}
+          name={name}
+        />
         <div className="min-w-0 flex-1">
           <div className="flex items-baseline gap-3">
             <span className="text-base font-medium text-neutral-300">
