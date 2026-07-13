@@ -89,3 +89,187 @@ export const voluntaryExperience = [
     ],
   },
 ]
+
+export const projects = [
+  {
+    id: 'up2u',
+    name: 'UP2U',
+    featured: true,
+    // NEED: project dates
+    dates: null,
+    techStack: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind',
+      'FastAPI',
+      'WebSockets',
+      'Redis',
+      'Gemini',
+    ],
+    summary:
+      'Real-time group dining app. Everyone joins a session, ranks preferences, and AI picks a restaurant. React and TypeScript frontend with WebSockets for live sync. FastAPI backend with Redis sessions. Gemini handles the reveal. 70 tests across backend and frontend. Deployed on Vercel and Railway.',
+    github: 'https://github.com/Chrisvaldar/UP2U',
+    liveUrl: 'https://up2u-app.vercel.app/',
+    image: null,
+  },
+  {
+    id: 'frugl',
+    name: 'Frugl',
+    featured: true,
+    // NEED: project dates
+    dates: null,
+    techStack: ['React', 'Vite', 'FastAPI', 'Gemini', 'Groq', 'pytest'],
+    summary:
+      'Grocery price comparison for Coles vs Woolworths. Scan a receipt or type a list, then see which store wins per item. Gemini does receipt OCR, Groq reranks messy matches. 44 pytest tests with GitHub Actions CI. Shipped to Vercel. Hit 100+ comparisons in the first week.',
+    github: 'https://github.com/Chrisvaldar/frugl',
+    liveUrl: 'https://frugl.vercel.app/',
+    image: null,
+  },
+  {
+    id: 'fit2179',
+    name: 'FIT2179 Data Visualisation 2',
+    featured: false,
+    dates: 'Semester 1 2026',
+    techStack: ['Vega-Lite', 'Vega-Embed', 'HTML', 'Python', 'GitHub Pages'],
+    summary:
+      'Interactive data story on Australian shark incidents from 1791 to 2022, with a NSW vs California comparison. Ten chart blocks across five sections. Built for FIT2179, submitted 31 May 2026.',
+    github: 'https://github.com/Chrisvaldar/FIT2179-Data-Visualisation-2',
+    liveUrl: 'https://chrisvaldar.github.io/FIT2179-Data-Visualisation-2/',
+    image: null,
+  },
+  {
+    id: 'personal-projects',
+    name: 'personal-projects',
+    featured: false,
+    // NEED: project dates
+    dates: null,
+    techStack: ['XGBoost', 'Jupyter Notebook', 'Arduino', 'IoT'],
+    summary:
+      'Umbrella repo for smaller work. NYC Airbnb price prediction with XGBoost on 48,000+ listings, validated on an out-of-distribution set. Homeboy Smart Apartment IoT build where I was project lead and wrote all the code. Local restaurant website redesign with customer research and UI.',
+    github: 'https://github.com/Chrisvaldar/personal-projects',
+    liveUrl: null,
+    image: null,
+  },
+  {
+    id: 'homeboy-2',
+    name: 'HomeBoy 2.0',
+    featured: false,
+    dates: 'MCD1160 Assignment 2',
+    techStack: ['Arduino', 'C++', 'Servo', 'DHT11', 'Ultrasonic sensor'],
+    summary:
+      'Smart home control on Arduino. Password lockout, servo door locks, intruder alarm, motorised window, room lighting, and temperature display. Wrote the full firmware solo for a team assignment.',
+    github: 'https://github.com/Chrisvaldar/HomeBoy-2.0',
+    liveUrl: null,
+    image: null,
+  },
+  {
+    id: 'frugl-2',
+    name: 'frugl-2.0',
+    featured: false,
+    // NEED: project dates
+    dates: null,
+    techStack: ['JavaScript', 'Vite'],
+    summary:
+      'Intent-to-plan grocery shopping pitch demo. Type what you need, answer a short wizard, get a collapsible plan with swap modal. Hardcoded data, no backend.',
+    github: 'https://github.com/Chrisvaldar/frugl-2.0',
+    liveUrl: null,
+    image: null,
+  },
+  {
+    id: 'homeboy',
+    name: 'HomeBoy',
+    featured: false,
+    dates: 'MCD1160 Assignment 1',
+    techStack: ['Arduino', 'C++', 'LCD', 'RGB LED'],
+    summary:
+      'Temperature monitoring on Arduino. Live LCD readings, colour-coded RGB LED, buzzer alerts outside safe range, and a serial menu for unit selection and running averages. Wrote the firmware solo.',
+    github: 'https://github.com/Chrisvaldar/HomeBoy',
+    liveUrl: null,
+    image: null,
+  },
+]
+
+export const hackathons = [
+  {
+    id: 'habitmon',
+    name: 'HABITMON',
+    featured: true,
+    dates: 'UNIHACK 2026',
+    techStack: ['React', 'Vite', 'Flask', 'Elasticsearch', 'OpenAI'],
+    summary:
+      'Gamified skill-learning app built in 48 hours. I did the React frontend: game logic, gacha rewards with CSS animations, local state persistence. Flask backend with Elasticsearch and OpenAI for dynamic content. Honourable Mention for Best Design and Most Fun Idea out of 1000+ participants.',
+    github: 'https://github.com/Yyjcreeper23/unihack-submission-2026',
+    liveUrl: 'https://habitmon.life/',
+    image: null,
+  },
+  {
+    id: 'formguard',
+    name: 'FormGuard',
+    featured: true,
+    dates: 'MACATHON 2026',
+    techStack: [
+      'Next.js',
+      'React',
+      'FastAPI',
+      'MediaPipe',
+      'Supabase',
+      'Gemini',
+    ],
+    summary:
+      'Real-time gym form tracking. MediaPipe pose estimation scores every rep as fatigue builds, then shows where form broke down and the injury risk. AI coach gives recommendations from session data. Top 5 out of 150+ at MACATHON 2026.',
+    github: 'https://github.com/lbrh/FormGaurd',
+    liveUrl: 'https://form-guard.vercel.app',
+    image: null,
+  },
+  {
+    id: 'uniqme',
+    name: 'UniqMe',
+    featured: true,
+    dates: 'Uniqlo ImpactHack',
+    techStack: ['HTML', 'JavaScript'],
+    summary:
+      'Personalised Uniqlo outfit curation via a style quiz and outfit carousel. Single HTML file demo built in a 2-hour sprint. Winner of Best AI Challenge Idea and Overall Best Idea at Uniqlo ImpactHack.',
+    github: 'https://github.com/Chrisvaldar/uniqme-impacthack-uniqlo',
+    liveUrl: null,
+    image: null,
+  },
+  {
+    id: 'forge',
+    name: 'Forge',
+    featured: false,
+    dates: 'Canva ImpactHack',
+    techStack: ['HTML', 'JavaScript', 'SVG'],
+    summary:
+      'Career path explorer for students whose paths branch and cross. Short reflective quiz surfaces three interactive SVG degree trees with student testimonials. Single-file hackathon prototype.',
+    github: 'https://github.com/Chrisvaldar/forge-canva-impacthack',
+    liveUrl: 'https://chrisvaldar.github.io/forge-canva-impacthack/',
+    image: null,
+  },
+  {
+    id: 'wyde',
+    name: 'Wyde',
+    featured: false,
+    // NEED: project dates
+    dates: null,
+    techStack: ['ESP32', 'PlatformIO', 'C++', 'Wi-Fi'],
+    summary:
+      'Low-cost robotics rover for learning autonomous systems. ESP32 tank-drive firmware with Wi-Fi teleop from a browser D-pad. Built as a hardware hack with room to grow into sensing and autonomy.',
+    github: 'https://github.com/Chrisvaldar/wyde-the-rover',
+    liveUrl: null,
+    image: null,
+  },
+  {
+    id: 'agpc',
+    name: 'Yo-Chi x AGPC',
+    featured: false,
+    dates: 'Monash ImpactHack x AGPC',
+    techStack: [],
+    summary:
+      'Partnership pitch concept: Yo-Chi as official dessert partner of the Australian Grand Prix Corporation across F1 and MotoGP. 12-month activation cycle from countdown promos to post-race flavours. Presentation slides only, no prototype.',
+    github: 'https://github.com/Chrisvaldar/AGPC-impacthack',
+    liveUrl: null,
+    image: null,
+  },
+]
+
