@@ -16,7 +16,11 @@ export default function Hero() {
   const restOfName = nameParts.slice(1).join(' ')
 
   return (
-    <section className="flex h-[calc(100dvh-5rem)] flex-col py-16 md:py-24">
+    <section className="relative flex min-h-[calc(100dvh-5rem)] flex-col justify-center py-16 md:py-24">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-[35%] hidden w-px bg-neutral-300 md:block"
+      />
       <h1 className="text-5xl font-bold tracking-tight text-neutral-950 md:text-7xl">
         {firstName}
         <br />
@@ -25,40 +29,33 @@ export default function Hero() {
 
       <div className="mt-12 hairline-t md:mt-16" />
 
-      <div className="relative mt-12 flex min-h-0 flex-1 md:mt-16">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-[35%] top-0 hidden w-px bg-neutral-300 md:block"
-        />
+      <div className="mt-12 grid gap-12 md:mt-16 md:grid-cols-2 md:gap-20">
+        <div className="space-y-6">
+          <p className="max-w-md text-base leading-relaxed text-neutral-950 md:text-lg">
+            {identity.tagline.map((line, index) => (
+              <span key={line}>
+                {index > 0 ? <br /> : null}
+                {line}
+              </span>
+            ))}
+          </p>
+          <p className="text-xs uppercase tracking-editorial text-neutral-600">
+            {identity.skills.join(' · ')}
+          </p>
+        </div>
 
-        <div className="grid w-full gap-12 md:grid-cols-2 md:gap-20">
-          <div className="space-y-6">
-            <p className="max-w-md text-base leading-relaxed text-neutral-950 md:text-lg">
-              {identity.tagline.map((line, index) => (
-                <span key={line}>
-                  {index > 0 ? <br /> : null}
-                  {line}
-                </span>
-              ))}
-            </p>
-            <p className="text-xs uppercase tracking-editorial text-neutral-600">
-              {identity.skills.join(' · ')}
-            </p>
-          </div>
-
-          <div className="space-y-3 md:text-right">
-            <p className="text-xs font-medium uppercase tracking-editorial text-neutral-950">
-              contact
-            </p>
-            <ContactLink href={`mailto:${identity.email}`} label={identity.email} />
-            <ContactLink
-              href={identity.github}
-              label={identity.github.replace('https://', '')}
-            />
-            {identity.linkedin ? (
-              <ContactLink href={identity.linkedin} label="LinkedIn" />
-            ) : null}
-          </div>
+        <div className="space-y-3 md:text-right">
+          <p className="text-xs font-medium uppercase tracking-editorial text-neutral-950">
+            contact
+          </p>
+          <ContactLink href={`mailto:${identity.email}`} label={identity.email} />
+          <ContactLink
+            href={identity.github}
+            label={identity.github.replace('https://', '')}
+          />
+          {identity.linkedin ? (
+            <ContactLink href={identity.linkedin} label="LinkedIn" />
+          ) : null}
         </div>
       </div>
     </section>
