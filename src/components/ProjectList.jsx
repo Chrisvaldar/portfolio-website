@@ -53,7 +53,7 @@ export default function ProjectList({ label, items }) {
               variants={motionEnabled ? flyIn : undefined}
               transition={transition}
             >
-              <p className="pb-10 text-xs font-medium uppercase tracking-editorial text-neutral-500 md:pb-12">
+              <p className="pb-12 text-xs font-medium uppercase tracking-editorial text-neutral-500 md:pb-14">
                 more
               </p>
             </Motion.div>
@@ -61,8 +61,8 @@ export default function ProjectList({ label, items }) {
             {secondaryItems.map((item, index) => (
               <Motion.div
                 key={item.id}
-                className={`${index > 0 ? 'hairline-t pt-8 md:pt-10' : ''} ${
-                  index < secondaryItems.length - 1 ? 'pb-8 md:pb-10' : ''
+                className={`${index > 0 ? 'hairline-t pt-10 md:pt-12' : ''} ${
+                  index < secondaryItems.length - 1 ? 'pb-10 md:pb-12' : ''
                 }`}
                 variants={motionEnabled ? flyIn : undefined}
                 transition={transition}

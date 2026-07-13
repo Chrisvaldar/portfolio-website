@@ -2,16 +2,26 @@ import EditorialLink from './EditorialLink'
 
 function ImagePlaceholder({ featured, image, name }) {
   if (image) {
+    if (featured) {
+      return (
+        <div className="flex w-full items-center justify-center md:min-h-[280px]">
+          <img
+            src={image}
+            alt={name}
+            className="max-h-[320px] w-full border border-neutral-300 object-contain md:max-h-[420px]"
+          />
+        </div>
+      )
+    }
+
     return (
-      <img
-        src={image}
-        alt={name}
-        className={
-          featured
-            ? 'aspect-[16/9] w-full bg-zinc-200 object-cover'
-            : 'h-24 w-24 shrink-0 bg-zinc-200 object-cover md:h-32 md:w-32'
-        }
-      />
+      <div className="flex h-32 w-32 shrink-0 items-center justify-center md:h-44 md:w-44">
+        <img
+          src={image}
+          alt={name}
+          className="max-h-full max-w-full border border-neutral-300 object-contain"
+        />
+      </div>
     )
   }
 
@@ -19,8 +29,8 @@ function ImagePlaceholder({ featured, image, name }) {
     <div
       className={
         featured
-          ? 'flex aspect-[16/9] min-h-[200px] w-full items-center justify-center bg-zinc-200 md:min-h-[280px]'
-          : 'flex h-24 w-24 shrink-0 items-center justify-center bg-zinc-200 md:h-32 md:w-32'
+          ? 'aspect-[16/9] min-h-[200px] w-full border border-neutral-300 md:min-h-[280px]'
+          : 'h-32 w-32 shrink-0 border border-neutral-300 md:h-44 md:w-44'
       }
       aria-label={`${name} image placeholder`}
     />
@@ -56,7 +66,7 @@ export default function ProjectItem({
   if (featured) {
     return (
       <article>
-        <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+        <div className="grid gap-8 md:grid-cols-2 md:items-center md:gap-12">
           <ImagePlaceholder featured image={image} name={name} />
           <div className="flex flex-col justify-center">
             <p className="text-5xl font-bold tracking-tight text-neutral-200 md:text-6xl">
@@ -83,22 +93,24 @@ export default function ProjectItem({
 
   return (
     <article>
-      <div className="flex gap-6">
+      <div className="flex items-center gap-8 md:gap-10">
         <ImagePlaceholder featured={false} image={image} name={name} />
         <div className="min-w-0 flex-1">
           <div className="flex items-baseline gap-3">
-            <span className="text-sm font-medium text-neutral-300">
+            <span className="text-base font-medium text-neutral-300">
               {indexLabel}
             </span>
-            <h3 className="text-base font-medium text-neutral-950">{name}</h3>
+            <h3 className="text-lg font-medium text-neutral-950 md:text-xl">
+              {name}
+            </h3>
           </div>
           {hackathonName ? (
-            <p className="mt-1 text-xs text-neutral-600">{hackathonName}</p>
+            <p className="mt-1.5 text-sm text-neutral-600">{hackathonName}</p>
           ) : null}
-          <p className="mt-2 text-xs uppercase tracking-editorial text-neutral-500">
+          <p className="mt-2.5 text-xs uppercase tracking-editorial text-neutral-500">
             {techStack.join(' · ')}
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700 md:text-base">
             {summary}
           </p>
           <ProjectLinks github={github} liveUrl={liveUrl} />
