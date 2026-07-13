@@ -1,4 +1,5 @@
 import { motion as Motion } from 'framer-motion'
+import EditorialLink from './EditorialLink'
 import { identity } from '../data/portfolio'
 import {
   flyIn,
@@ -12,9 +13,7 @@ function ContactLink({ href, label }) {
   if (!href) return null
 
   return (
-    <a href={href} className="block text-sm hover:underline">
-      {label}
-    </a>
+    <EditorialLink href={href} label={label} className="md:ml-auto" />
   )
 }
 
@@ -77,7 +76,7 @@ export default function Hero() {
           </Motion.div>
 
           <Motion.div
-            className="space-y-3 md:text-right"
+            className="flex flex-col items-start gap-3 md:items-end"
             variants={motionEnabled ? flyIn : undefined}
             transition={transition}
           >

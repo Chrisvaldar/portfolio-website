@@ -25,19 +25,13 @@ function ImagePlaceholder({ featured, image, name }) {
   )
 }
 
+import EditorialLink from './EditorialLink'
+
 function ProjectLinks({ github, liveUrl }) {
   return (
-    <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
-      {github ? (
-        <a href={github} className="hover:underline">
-          GitHub
-        </a>
-      ) : null}
-      {liveUrl ? (
-        <a href={liveUrl} className="hover:underline">
-          Live demo
-        </a>
-      ) : null}
+    <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+      {github ? <EditorialLink href={github} label="GitHub" /> : null}
+      {liveUrl ? <EditorialLink href={liveUrl} label="Live demo" /> : null}
     </div>
   )
 }

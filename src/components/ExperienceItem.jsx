@@ -1,3 +1,5 @@
+import EditorialLink from './EditorialLink'
+
 export default function ExperienceItem({ role, org, location, dates, bullets, github }) {
   return (
     <article>
@@ -19,12 +21,11 @@ export default function ExperienceItem({ role, org, location, dates, bullets, gi
       </ul>
 
       {github ? (
-        <a
+        <EditorialLink
           href={github}
-          className="mt-4 inline-block text-sm text-neutral-950 hover:underline"
-        >
-          GitHub
-        </a>
+          label="GitHub"
+          className="mt-4 inline-flex"
+        />
       ) : null}
     </article>
   )
