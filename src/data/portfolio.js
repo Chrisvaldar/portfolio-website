@@ -37,6 +37,8 @@ export const workExperience = [
       'Built an LLM agentic reference controller that parses qualitative alert prose, classifies trust windows, and resolves FCAS/compliance conflicts. Used internally to validate scenario difficulty.',
     ],
     github: null,
+    image: '/images/watt-the-hack.png',
+    secondaryImage: '/images/watt-the-hack-logos.png',
   },
   {
     id: 'royal-stacks',
@@ -49,6 +51,7 @@ export const workExperience = [
       'Coordinated with kitchen and floor staff. Built up communication and teamwork on busy shifts.',
     ],
     github: null,
+    image: '/images/royal-stacks.png',
   },
 ]
 
@@ -183,7 +186,7 @@ export const hackathons = [
       'Gemini',
     ],
     summary:
-      'Real-time gym form tracking. MediaPipe pose estimation scores every rep as fatigue builds, then shows where form broke down and the injury risk. AI coach gives recommendations from session data. Top 5 out of 150+ at MACATHON 2026.',
+      'Real-time gym form tracking. MediaPipe pose estimation scores every rep as fatigue builds, then shows where form broke down and the injury risk. AI coach gives recommendations from session data. Top 5 out of 100+ participants at MACATHON 2026.',
     github: 'https://github.com/lbrh/FormGaurd',
     liveUrl: 'https://form-guard.vercel.app',
     image: '/images/formguard.png',

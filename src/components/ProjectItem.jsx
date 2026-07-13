@@ -139,11 +139,7 @@ export default function ProjectItem({
 
   return (
     <article>
-      <div
-        className={`flex gap-8 md:gap-10 ${
-          secondaryImage ? 'items-start' : 'items-center'
-        }`}
-      >
+      <div className="flex items-center gap-8 md:gap-10">
         <ProjectImages
           featured={false}
           image={image}
