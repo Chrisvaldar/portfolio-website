@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-white font-sans text-neutral-950 antialiased;
+  }
+
+  a {
+    @apply text-neutral-950 underline-offset-4 transition-colors hover:underline;
+  }
+}
+
+@layer utilities {
+  .hairline {
+    @apply border-neutral-300;
+  }
+
+  .hairline-t {
+    @apply border-t border-neutral-300;
+  }
+
+  .hairline-b {
+    @apply border-b border-neutral-300;
+  }
+}
