@@ -11,15 +11,22 @@ export default function ProjectList({ label, items }) {
 
       <div className="max-w-4xl">
         {featuredItems.map((item, index) => (
-          <div key={item.id} className={index > 0 ? 'hairline-t' : undefined}>
+          <div
+            key={item.id}
+            className={`${index > 0 ? 'hairline-t pt-12 md:pt-16' : ''} ${
+              index < featuredItems.length - 1 || secondaryItems.length > 0
+                ? 'pb-12 md:pb-16'
+                : ''
+            }`}
+          >
             <ProjectItem {...item} index={index + 1} />
           </div>
         ))}
 
         {secondaryItems.length > 0 ? (
           <>
-            <div className="mt-8 hairline-t pt-8">
-              <p className="text-xs font-medium uppercase tracking-editorial text-neutral-500">
+            <div className="hairline-t pt-10 md:pt-12">
+              <p className="pb-10 text-xs font-medium uppercase tracking-editorial text-neutral-500 md:pb-12">
                 more
               </p>
             </div>
@@ -27,12 +34,11 @@ export default function ProjectList({ label, items }) {
             {secondaryItems.map((item, index) => (
               <div
                 key={item.id}
-                className={index > 0 ? 'hairline-t' : undefined}
+                className={`${index > 0 ? 'hairline-t pt-8 md:pt-10' : ''} ${
+                  index < secondaryItems.length - 1 ? 'pb-8 md:pb-10' : ''
+                }`}
               >
-                <ProjectItem
-                  {...item}
-                  index={featuredItems.length + index + 1}
-                />
+                <ProjectItem {...item} index={featuredItems.length + index + 1} />
               </div>
             ))}
           </>

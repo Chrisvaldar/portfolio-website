@@ -10,7 +10,9 @@ export default function ExperienceList({ label, items }) {
         {items.map((item, index) => (
           <div
             key={item.id}
-            className={index > 0 ? 'hairline-t' : undefined}
+            className={`${index > 0 ? 'hairline-t pt-10 md:pt-12' : ''} ${
+              index < items.length - 1 ? 'pb-10 md:pb-12' : ''
+            }`}
           >
             <ExperienceItem {...item} />
           </div>

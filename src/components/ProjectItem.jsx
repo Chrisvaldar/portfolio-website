@@ -61,7 +61,7 @@ export default function ProjectItem({
 
   if (featured) {
     return (
-      <article className="py-20 md:py-24">
+      <article>
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           <ImagePlaceholder featured image={image} name={name} />
           <div className="flex flex-col justify-center">
@@ -88,7 +88,7 @@ export default function ProjectItem({
   }
 
   return (
-    <article className="py-8">
+    <article>
       <div className="flex gap-6">
         <ImagePlaceholder featured={false} image={image} name={name} />
         <div className="min-w-0 flex-1">
