@@ -1,3 +1,5 @@
+import EditorialLink from './EditorialLink'
+
 function ImagePlaceholder({ featured, image, name }) {
   if (image) {
     return (
@@ -25,8 +27,6 @@ function ImagePlaceholder({ featured, image, name }) {
   )
 }
 
-import EditorialLink from './EditorialLink'
-
 function ProjectLinks({ github, liveUrl }) {
   return (
     <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
@@ -42,7 +42,7 @@ function formatIndex(index) {
 
 export default function ProjectItem({
   name,
-  dates,
+  hackathonName,
   techStack,
   summary,
   github,
@@ -65,8 +65,8 @@ export default function ProjectItem({
             <h3 className="mt-2 text-2xl font-semibold text-neutral-950 md:text-3xl">
               {name}
             </h3>
-            {dates ? (
-              <p className="mt-1 text-sm text-neutral-600">{dates}</p>
+            {hackathonName ? (
+              <p className="mt-1 text-sm text-neutral-600">{hackathonName}</p>
             ) : null}
             <p className="mt-3 text-xs uppercase tracking-editorial text-neutral-600">
               {techStack.join(' · ')}
@@ -92,8 +92,8 @@ export default function ProjectItem({
             </span>
             <h3 className="text-base font-medium text-neutral-950">{name}</h3>
           </div>
-          {dates ? (
-            <p className="mt-1 text-xs text-neutral-600">{dates}</p>
+          {hackathonName ? (
+            <p className="mt-1 text-xs text-neutral-600">{hackathonName}</p>
           ) : null}
           <p className="mt-2 text-xs uppercase tracking-editorial text-neutral-500">
             {techStack.join(' · ')}

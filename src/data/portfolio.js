@@ -94,8 +94,6 @@ export const projects = [
     id: 'up2u',
     name: 'UP2U',
     featured: true,
-    // NEED: project dates
-    dates: null,
     techStack: [
       'React',
       'TypeScript',
@@ -110,39 +108,34 @@ export const projects = [
       'Real-time group dining app. Everyone joins a session, ranks preferences, and AI picks a restaurant. React and TypeScript frontend with WebSockets for live sync. FastAPI backend with Redis sessions. Gemini handles the reveal. 70 tests across backend and frontend. Deployed on Vercel and Railway.',
     github: 'https://github.com/Chrisvaldar/UP2U',
     liveUrl: 'https://up2u-app.vercel.app/',
-    image: null,
+    image: '/images/up2u.png',
   },
   {
     id: 'frugl',
     name: 'Frugl',
     featured: true,
-    // NEED: project dates
-    dates: null,
     techStack: ['React', 'Vite', 'FastAPI', 'Gemini', 'Groq', 'pytest'],
     summary:
       'Grocery price comparison for Coles vs Woolworths. Scan a receipt or type a list, then see which store wins per item. Gemini does receipt OCR, Groq reranks messy matches. 44 pytest tests with GitHub Actions CI. Shipped to Vercel. Hit 100+ comparisons in the first week.',
     github: 'https://github.com/Chrisvaldar/frugl',
     liveUrl: 'https://frugl.vercel.app/',
-    image: null,
+    image: '/images/frugl.png',
   },
   {
     id: 'fit2179',
-    name: 'FIT2179 Data Visualisation 2',
+    name: 'Sharks in Australian Waters',
     featured: false,
-    dates: 'Semester 1 2026',
     techStack: ['Vega-Lite', 'Vega-Embed', 'HTML', 'Python', 'GitHub Pages'],
     summary:
-      'Interactive data story on Australian shark incidents from 1791 to 2022, with a NSW vs California comparison. Ten chart blocks across five sections. Built for FIT2179, submitted 31 May 2026.',
+      'Interactive data story on Australian shark incidents from 1791 to 2022, with a NSW vs California comparison. Ten chart blocks across five sections.  ',
     github: 'https://github.com/Chrisvaldar/FIT2179-Data-Visualisation-2',
     liveUrl: 'https://chrisvaldar.github.io/FIT2179-Data-Visualisation-2/',
-    image: null,
+    image: '/images/fit2179.png',
   },
   {
     id: 'personal-projects',
     name: 'personal-projects',
     featured: false,
-    // NEED: project dates
-    dates: null,
     techStack: ['XGBoost', 'Jupyter Notebook', 'Arduino', 'IoT'],
     summary:
       'Umbrella repo for smaller work. NYC Airbnb price prediction with XGBoost on 48,000+ listings, validated on an out-of-distribution set. Homeboy Smart Apartment IoT build where I was project lead and wrote all the code. Local restaurant website redesign with customer research and UI.',
@@ -154,7 +147,6 @@ export const projects = [
     id: 'homeboy-2',
     name: 'HomeBoy 2.0',
     featured: false,
-    dates: 'MCD1160 Assignment 2',
     techStack: ['Arduino', 'C++', 'Servo', 'DHT11', 'Ultrasonic sensor'],
     summary:
       'Smart home control on Arduino. Password lockout, servo door locks, intruder alarm, motorised window, room lighting, and temperature display. Wrote the full firmware solo for a team assignment.',
@@ -166,8 +158,6 @@ export const projects = [
     id: 'frugl-2',
     name: 'frugl-2.0',
     featured: false,
-    // NEED: project dates
-    dates: null,
     techStack: ['JavaScript', 'Vite'],
     summary:
       'Intent-to-plan grocery shopping pitch demo. Type what you need, answer a short wizard, get a collapsible plan with swap modal. Hardcoded data, no backend.',
@@ -179,7 +169,6 @@ export const projects = [
     id: 'homeboy',
     name: 'HomeBoy',
     featured: false,
-    dates: 'MCD1160 Assignment 1',
     techStack: ['Arduino', 'C++', 'LCD', 'RGB LED'],
     summary:
       'Temperature monitoring on Arduino. Live LCD readings, colour-coded RGB LED, buzzer alerts outside safe range, and a serial menu for unit selection and running averages. Wrote the firmware solo.',
@@ -193,8 +182,8 @@ export const hackathons = [
   {
     id: 'habitmon',
     name: 'HABITMON',
+    hackathonName: 'UNIHACK 2026',
     featured: true,
-    dates: 'UNIHACK 2026',
     techStack: ['React', 'Vite', 'Flask', 'Elasticsearch', 'OpenAI'],
     summary:
       'Gamified skill-learning app built in 48 hours. I did the React frontend: game logic, gacha rewards with CSS animations, local state persistence. Flask backend with Elasticsearch and OpenAI for dynamic content. Honourable Mention for Best Design and Most Fun Idea out of 1000+ participants.',
@@ -205,8 +194,8 @@ export const hackathons = [
   {
     id: 'formguard',
     name: 'FormGuard',
+    hackathonName: 'MACATHON 2026',
     featured: true,
-    dates: 'MACATHON 2026',
     techStack: [
       'Next.js',
       'React',
@@ -224,8 +213,8 @@ export const hackathons = [
   {
     id: 'uniqme',
     name: 'UniqMe',
+    hackathonName: 'Uniqlo ImpactHack',
     featured: true,
-    dates: 'Uniqlo ImpactHack',
     techStack: ['HTML', 'JavaScript'],
     summary:
       'Personalised Uniqlo outfit curation via a style quiz and outfit carousel. Single HTML file demo built in a 2-hour sprint. Winner of Best AI Challenge Idea and Overall Best Idea at Uniqlo ImpactHack.',
@@ -236,8 +225,8 @@ export const hackathons = [
   {
     id: 'forge',
     name: 'Forge',
+    hackathonName: 'Canva ImpactHack',
     featured: false,
-    dates: 'Canva ImpactHack',
     techStack: ['HTML', 'JavaScript', 'SVG'],
     summary:
       'Career path explorer for students whose paths branch and cross. Short reflective quiz surfaces three interactive SVG degree trees with student testimonials. Single-file hackathon prototype.',
@@ -248,9 +237,8 @@ export const hackathons = [
   {
     id: 'wyde',
     name: 'Wyde',
+    hackathonName: 'Cursor Hardware Hack',
     featured: false,
-    // NEED: project dates
-    dates: null,
     techStack: ['ESP32', 'PlatformIO', 'C++', 'Wi-Fi'],
     summary:
       'Low-cost robotics rover for learning autonomous systems. ESP32 tank-drive firmware with Wi-Fi teleop from a browser D-pad. Built as a hardware hack with room to grow into sensing and autonomy.',
@@ -261,8 +249,8 @@ export const hackathons = [
   {
     id: 'agpc',
     name: 'Yo-Chi x AGPC',
+    hackathonName: 'Monash ImpactHack x AGPC',
     featured: false,
-    dates: 'Monash ImpactHack x AGPC',
     techStack: [],
     summary:
       'Partnership pitch concept: Yo-Chi as official dessert partner of the Australian Grand Prix Corporation across F1 and MotoGP. 12-month activation cycle from countdown promos to post-race flavours. Presentation slides only, no prototype.',
