@@ -233,6 +233,18 @@ export const hackathons = [
     secondaryImage: '/images/uniqme-demo.png',
   },
   {
+    id: 'kulin-walk',
+    name: 'Kulin Walk',
+    hackathonName: 'Indigenous ImpactHack',
+    featured: false,
+    techStack: [],
+    summary:
+      'Campus walk concept using QR codes at Indigenous-significant Monash locations. Each scan unlocks stories, language snippets, and historical context, plus links to Monash Indigenous programs. Completion earns a LinkedIn badge so learning feels ongoing, not locked to certain degrees. Pitch deck only. Winner of Best Pitch at Indigenous ImpactHack.',
+    github: 'https://github.com/Chrisvaldar/kulin-walk-indigenous-impacthack',
+    liveUrl: null,
+    image: '/images/kulin-walk.png',
+  },
+  {
     id: 'forge',
     name: 'Forge',
     hackathonName: 'Canva ImpactHack',
