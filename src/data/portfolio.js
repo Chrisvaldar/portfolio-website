@@ -75,7 +75,7 @@ export const voluntaryExperience = [
     location: 'Melbourne, VIC',
     dates: 'O-Week Jul 2026',
     bullets: [
-      'Volunteer tutor for the O-Week programming bootcamp, helping incoming students with beginner Python.',
+      'Volunteer tutor for the 2-day O-Week programming bootcamp (300+ students), helping incoming students with beginner Python.',
       'Walk students through simple coding problems and how to think step by step through basic Python logic.',
       'Mentor one-on-one and in small groups so new students feel supported getting started with programming.',
     ],
