@@ -4,6 +4,8 @@ Personal portfolio for Christopher Valensio Darsono. React, Vite, and Tailwind C
 
 Link: [https://chrisvaldar.vercel.app/](https://chrisvaldar.vercel.app/)
 
+![Portfolio preview](docs/preview.png)
+
 ## What's on here
 
 This site is where I keep everything: projects, experience, and other work that doesn't all fit on a resume.
@@ -18,3 +20,7 @@ src/
 project_descriptions/   longer writeups per project
 public/images/          images for projects and experience
 ```
+
+## Roadmap
+
+- [ ] Dark mode
