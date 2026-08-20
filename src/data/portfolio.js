@@ -23,6 +23,19 @@ export const identity = {
 
 export const workExperience = [
   {
+    id: 'coco',
+    role: 'Software Engineer',
+    org: 'Coco',
+    location: 'Melbourne, VIC',
+    dates: 'Aug 2026 to Present',
+    bullets: [
+      'Built an Eve agent with 5 tools that work a live Jube AML queue: list, lock, note, close, and threshold change.',
+      'Put Coco’s governance layer in front of writes so stolen locks, missing EDD, same-session clears, and unsupervised rule changes get blocked or escalated.',
+    ],
+    github: 'https://github.com/Chrisvaldar/coco-aml-agent',
+    image: '/images/coco.png',
+  },
+  {
     id: 'watt-the-hack',
     role: 'Software Developer & Judge',
     org: 'Watt The Hack, MLAI x Monash DeepNeuron',
