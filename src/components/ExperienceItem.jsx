@@ -1,17 +1,17 @@
 import EditorialLink from './EditorialLink'
 
-function ExperienceImages({ image, secondaryImage, org }) {
+function ExperienceImages({ image, secondaryImage, org, imageAlt, secondaryImageAlt }) {
   if (image && secondaryImage) {
     return (
       <div className="flex w-36 shrink-0 flex-col gap-2 md:w-44 md:gap-3">
         <img
           src={image}
-          alt={org}
+          alt={imageAlt || org}
           className="w-full border border-neutral-300 object-contain"
         />
         <img
           src={secondaryImage}
-          alt={`${org} partners`}
+          alt={secondaryImageAlt || `${org} partners`}
           className="w-full border border-neutral-300 object-contain"
         />
       </div>
@@ -42,6 +42,8 @@ export default function ExperienceItem({
   github,
   image,
   secondaryImage,
+  imageAlt,
+  secondaryImageAlt,
 }) {
   const meta = (
     <>
@@ -80,6 +82,8 @@ export default function ExperienceItem({
             image={image}
             secondaryImage={secondaryImage}
             org={org}
+            imageAlt={imageAlt}
+            secondaryImageAlt={secondaryImageAlt}
           />
           <div className="min-w-0 flex-1">{meta}</div>
         </div>

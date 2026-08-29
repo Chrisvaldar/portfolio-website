@@ -48,7 +48,10 @@ export const workExperience = [
       'Shipped the UI for a mobile-first climate-misinfo game: like/dislike plus MCQ feed with prebunk feedback. Used with IFRC’s World Disasters Report. Current sprint is tightening chat and feed UX in Next.js 16 / React 19.',
     ],
     github: null,
-    image: '/images/mosaic.png',
+    image: '/images/mosaic-logo.png',
+    secondaryImage: '/images/ifrc.png',
+    imageAlt: 'MOSAIC logo',
+    secondaryImageAlt: 'IFRC logo',
   },
   {
     id: 'pulse',
@@ -62,7 +65,7 @@ export const workExperience = [
       'Wired face detection, PyTorch tensors, and the dashboard into one Python pipeline off the same webcam feed. Prototype, not a hospital deploy.',
     ],
     github: null,
-    image: '/images/pulse.png',
+    image: '/images/deepneuron.png',
   },
   {
     id: 'watt-the-hack',
